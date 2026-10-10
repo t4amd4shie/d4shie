@@ -1,0 +1,328 @@
+/**
+ * @name NotAnotherAnimeTheme
+ * @author d4shie (puckzxz#2080)
+ * @version 3.5
+ * @description An easily customizable theme with rounded Liquid Glass effects & animations.
+ * @invite FdZhbjY
+ * @source https://github.com/puckzxz/NotAnotherAnimeTheme
+ * @updateUrl https://raw.githubusercontent.com/puckzxz/NotAnotherAnimeTheme/master/NotAnotherAnimeTheme.theme.css
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url(https://puckzxz.github.io/NotAnotherAnimeTheme/build/v3/naat.v3.css);
+
+/* Font Global (Fredoka One) */
+* {
+  font-family: 'Fredoka One', cursive, sans-serif !important;
+}
+
+:root {
+  /*
+    Theme Background
+  */
+  --theme-background-image: url(https://wallpaperaccess.com/full/212745.jpg);
+
+  /*
+    Main Theme Color (Ciano Médio)
+  */
+  --main-theme-color: #00a8b5;
+
+  /*
+    Main Theme Transparency - Reduzido para transparência cristalina de vidro
+  */
+  --theme-transparency: rgba(20, 30, 40, 0.35);
+
+  /*
+    Home Icon Image
+  */
+  --home-icon-image: url(https://i.postimg.cc/wMyF9vGv/2-Sem-Titulo-20261010183645.png);
+
+  /*
+    Change your friends icon image position & zoom
+  */
+  --home-icon-image-position: center center;
+  --home-icon-image-zoom: 100%;
+
+  /*
+    Server Listing Width
+  */
+  --server-listing-width: 126px;
+
+  /*
+    Font Size & Family
+  */
+  --font-size: 100%;
+  --font-primary: 'Fredoka One', cursive, sans-serif;
+  --font-display: 'Fredoka One', cursive, sans-serif;
+
+  /*
+    Mention colors (Ciano Vidro)
+  */
+  --mention-color: rgba(0, 168, 181, 0.2);
+  --mention-sider: #00a8b5;
+  --mention-hover-color: rgba(0, 168, 181, 0.35);
+
+  /*
+    Server category hover color
+  */
+  --category-hover-color: #00c4d4;
+
+  /*
+    Unread server animation (Desativado o rainbow)
+  */
+  --unread-server-animation: none;
+
+  /*
+    Video / Screen share buttons
+  */
+  --video-screen-button-background-color: rgba(255, 255, 255, 0.1);
+  --video-screen-button-foreground-color: white;
+  --video-screen-button-background-hovor-color: rgba(0, 168, 181, 0.4);
+  --video-screen-button-foreground-hovor-color: white;
+
+  /*
+    Role Title Color
+  */
+  --member-listing-role-color: var(--main-theme-color);
+
+  /*
+    Small User Popout (Glassmorphism)
+  */
+  --small-user-popout-background-image: var(--theme-background-image);
+  --small-user-popout-background-transparency: rgba(20, 30, 40, 0.45);
+  --small-user-popout-background-image-position: center;
+
+  /*
+    Big User Popout (Glassmorphism)
+  */
+  --big-user-popout-background-image: var(--theme-background-image);
+  --big-user-popout-background-transparency: rgba(20, 30, 40, 0.45);
+  --big-user-popout-background-image-position: center;
+
+  /*
+    Code Markup
+  */
+  --code-markup-background-color: rgba(10, 15, 20, 0.4);
+  --code-markup-border: 1px solid rgba(0, 168, 181, 0.4);
+
+  /*
+    Message Box Transparency
+  */
+  --message-box-transparency: rgba(15, 25, 35, 0.35);
+
+  /*
+    Embed Background Transparency
+  */
+  --embed-background-transparency: rgba(15, 25, 35, 0.35);
+
+  /*
+    Message Hover Buttons
+  */
+  --message-hover-buttons-background: rgba(0, 168, 181, 0.25);
+
+  /*
+    Context Menu Transparency
+  */
+  --context-menu-transparency: rgba(15, 25, 35, 0.65);
+
+  /*
+    Add Server / Discovery Icon
+  */
+  --add-discover-icon-transparency: rgba(0, 168, 181, 0.2);
+  --add-discover-icon-color: #00a8b5;
+
+  /*
+    Channel Limit Number Color
+  */
+  --channel-limit-count-color: var(--channels-default);
+  --channel-limit-background-left: rgba(0, 168, 181, 0.2);
+  --channel-limit-background-right: rgba(0, 168, 181, 0.3);
+
+  /*
+    Scrollbar Colors
+  */
+  --scrollbar-color: rgba(0, 168, 181, 0.35);
+
+  /*
+    Unread Message Divider
+  */
+  --unread-message-divider-color: #00a8b5;
+  --unread-message-divider-font-color: #fff;
+
+  /*
+    New Messages Bar Color
+  */
+  --new-messages-bar-background-color: #00a8b5;
+  --new-messages-bar-font-color: #fff;
+
+  /*
+    Emoji Menu
+  */
+  --emoji-menu-background-color: rgba(15, 25, 35, 0.55);
+  --emoji-menu-sider-background-color: rgba(0, 0, 0, 0);
+  --emoji-menu-server-header-background-color: rgba(10, 20, 30, 0.65);
+  --emoji-menu-bottom-bar-background-color: rgba(10, 20, 30, 0.75);
+  --emoji-menu-search-bar-background-color: rgba(255, 255, 255, 0.15);
+
+  /*
+    Message Search
+  */
+  --message-search-menu-background-color: rgba(15, 25, 35, 0.65);
+  --message-search-container-background-color: rgba(15, 25, 35, 0.45);
+  --message-search-result-background-color: rgba(0, 168, 181, 0.15);
+
+  /*
+    Channel colors
+  */
+  --text-voice-channel-color: #b0c0ce;
+  --text-voice-channel-hover-color: #ffffff;
+  --text-voice-channel-selected-text-color: #ffffff;
+  --unread-text-channel-color: #00a8b5;
+  --unread-text-channel-bubble-color: var(--main-theme-color);
+
+  /*
+    Folders
+  */
+  --folder-background-color: rgba(0, 168, 181, 0.2);
+  --expanded-folder-background-color: transparent;
+
+  /*
+    Reactions
+  */
+  --reaction-emoji-background-color: rgba(0, 168, 181, 0.15);
+  --reaction-emoji-border-color: 1px solid rgba(0, 168, 181, 0.35);
+  --reaction-emoji-hover-background-color: rgba(0, 168, 181, 0.3);
+  --reaction-emoji-hover-border-color: rgba(0, 168, 181, 0.6);
+}
+
+/* =========================================================
+   ESTILOS E ANIMAÇÕES EXTRA: LIQUID GLASS (GLASSMORPHISM)
+   ========================================================= */
+
+div[class*="sidebar"],
+section[class*="panels"],
+div[class*="chatContent"],
+div[class*="userPopout"],
+div[class*="popout"],
+div[class*="menu"],
+div[class*="modal"],
+div[class*="embedFull"],
+form[class*="form"] {
+  backdrop-filter: blur(12px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(140%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 168, 181, 0.25) !important;
+  border-radius: 12px !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+div[class*="embedFull"],
+div[class*="messageBox"] {
+  position: relative;
+  overflow: hidden !important;
+}
+
+div[class*="embedFull"]::before,
+div[class*="messageBox"]::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -150%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    115deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.08) 40%,
+    rgba(0, 168, 181, 0.2) 50%,
+    rgba(255, 255, 255, 0.08) 60%,
+    transparent 80%
+  );
+  transform: rotate(25deg);
+  pointer-events: none;
+  transition: transform 0.8s ease;
+}
+
+div[class*="embedFull"]:hover::before,
+div[class*="messageBox"]:hover::before {
+  transform: translate(100%, 100%) rotate(25deg);
+}
+
+/* =========================================================
+   ANIMAÇÃO LIQUID GLASS REDONDINHA AO CLICAR EM UM SERVIDOR
+   ========================================================= */
+
+@keyframes liquidServerRippleRound {
+  0% {
+    transform: scale(0.85);
+    box-shadow: 0 0 0 0 rgba(0, 168, 181, 0.9), 0 0 20px rgba(0, 168, 181, 0.7);
+  }
+  50% {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 16px rgba(0, 168, 181, 0), 0 0 30px rgba(0, 212, 228, 0.9);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 168, 181, 0), 0 4px 15px rgba(0, 168, 181, 0.4);
+  }
+}
+
+/* Força o ícone e o wrapper do servidor a ficarem perfeitamente redondos */
+div[class*="listItem"] div[class*="wrapper"],
+div[class*="listItem"] div[class*="childWrapper"],
+div[class*="listItem"] img {
+  border-radius: 50% !important;
+}
+
+/* Efeito de clique fluido e circular */
+div[class*="listItem"] div[class*="wrapper"]:active,
+div[class*="listItem"] div[class*="svg"]:active,
+div[class*="guildWrapper"]:active,
+div[class*="listItem"] [role="button"]:active {
+  animation: liquidServerRippleRound 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+}
+
+/* Transição suave ao passar o mouse mantendo o formato redondo */
+div[class*="listItem"] div[class*="wrapper"] {
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease, backdrop-filter 0.25s ease !important;
+}
+
+div[class*="listItem"] div[class*="wrapper"]:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(0, 168, 181, 0.6) !important;
+}
+
+@keyframes liquidFloat {
+  0% {
+    transform: translateY(0px) scale(1);
+    box-shadow: 0 8px 32px 0 rgba(0, 168, 181, 0.2);
+  }
+  50% {
+    transform: translateY(-4px) scale(1.005);
+    box-shadow: 0 12px 36px 0 rgba(0, 168, 181, 0.35);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+    box-shadow: 0 8px 32px 0 rgba(0, 168, 181, 0.2);
+  }
+}
+
+div[class*="userPopout"]:hover,
+div[class*="menu"]:hover {
+  animation: liquidFloat 4s ease-in-out infinite !important;
+}
+
+button,
+div[class*="item-"],
+div[class*="reaction"] {
+  backdrop-filter: blur(8px) !important;
+  border-radius: 8px !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease !important;
+}
+
+button:hover,
+div[class*="reaction"]:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 168, 181, 0.6) !important;
+}
